@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Poppins:wght@300&display=swap')
-
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +10,7 @@
     justify-content: space-between;
     border-bottom: 9px;
     border-bottom: linen solid;
+    width: 100%;
  }
  
 .contenedor img {
@@ -32,7 +31,7 @@
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    box-shadow: 15px 15px #FCCA46;
+    box-shadow: 15px 15px #E34A6F;
     }
 
 .contenedor2 {
@@ -40,6 +39,6 @@
     }
 a {
    text-decoration: none;
-   color: goldenrod;
+   color: #E34A6F;
    font-family: 'Poppins', sans-serif;
    }
