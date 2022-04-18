@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Poppins:wght@300&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    background-color: #EDDEA4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 9px;
+    border-bottom: linen solid;
+ }
+ 
+.contenedor img {
+    width: 150px;
+    height: 150px;
+    /* filter: sepia(0.7) contrast(1.1) saturate(1.9) grayscale(0.3); */
+    display: flex;
+    justify-content: space-around;
+    }
+.padre div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.contenedor1 div {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 15px 15px #FCCA46;
+    }
+
+.contenedor2 {
+    list-style-type: none; 
+    }
+a {
+   text-decoration: none;
+   color: goldenrod;
+   font-family: 'Poppins', sans-serif;
+   }
