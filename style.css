@@ -3,17 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}    
+}
+
 :root {
-    --mauve: #613049;
+    --celeste:#94BFBE;
     --purple: #5C0029;
-    --purple2: #972D6C; 
+    --lila: #857C8D;
     }
 * {
-    width: 100%;
     height: auto;
 }
 body {
+    background: url(./img-header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
@@ -31,14 +36,10 @@ main {
     height: 100%;
    }
 header {
-    background: url(./shampoo\ sólido.jpg) no-repeat;
-    background-position: top;
-    background-size: cover;
-    width: 100%;
+     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 3rem 0.5rem 3rem 1rem;
-    margin: auto;
+    padding: 3rem 1rem 3rem 1rem;
     }
 .menu {
     display: flex;
@@ -46,12 +47,15 @@ header {
     align-items: center;
     flex-wrap: wrap;
     }
-
-.menu-nav i {
+.menu-btn {
+    width: 50px;
+    }
+.menu-btn i {
     font-size: 2rem;
     color: var(--purple);
+    font-weight: bold;
     }
-#menu-nav {
+.menu-nav {
     display: none;
 }
 nav {
@@ -61,36 +65,57 @@ nav {
     width: 8rem;
     margin-bottom: 3rem;
 }
-.item {
+.lista {
     width: 100%;
     text-transform: uppercase;
-    order: 1;
+    order: 3;
     display: none;
 }
-.menu-nav:checked + .item {
+.menu-nav:checked + .lista {
     display: block;
 }
 .our-slogan {
-    background:  #94BFBE;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 2rem 0 2rem 0;
-}
+   }
 .our-slogan img {
-    width: 250px;
+    width: 350px;
+    position: relative;
+    margin-left: 2px;
 }
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 4rem;
+    padding: 3rem;
+    margin: 3.5rem;
+    }
 .our-slogan p {
     text-align: center;
     font-weight: 400;
-    font-weight: bold;
     font-size: 2rem;
-    color: var(--purple);
+    color: black;
     margin: 1rem 0 2rem 0;
     padding: 0 1rem;
+    }
+.our-slogan button {
+    width: 8.5rem;
+    height: 2.5rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    font-weight: bold;
+    background-color: #0a5d41;
+    margin-bottom: 1rem;
 }
 .about__section {
-    background: #857C8D;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,5 +142,25 @@ nav {
 .about__content h1 {
     text-align: center;
     color: var(--purple);
+}
+@media (min-width: 1000px) {
 
+   .logo {
+       width: 12rem;
+   }
+   .menu-btn{
+       display: none;
+   }
+   .lista {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .our-slogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+   }
 }
